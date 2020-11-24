@@ -13,8 +13,9 @@ const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: '', component: ContentLayoutComponent, children:[
     // {path: '', redirectTo:'', pathMatch: 'full'},
-    // {path: 'home',loadChildren:()=> import('./FeatureModules/Dashboard/').then(m =>m.DashboardModule)}
-    { path: 'customer', loadChildren: () => import('./FeatureModules/Customer/Customer.Module').then(m => m.CustomerModule) }  
+  { path: 'customer', loadChildren: () => import('./FeatureModules/Customer/Customer.Module').then(m => m.CustomerModule) },
+  { path: 'jobs',loadChildren:()=> import('./FeatureModules/Jobs/Jobs.module').then(m =>m.JobsModule)},
+  { path: 'items',loadChildren:()=> import('./FeatureModules/Items/Items.module').then(m =>m.ItemsModule)},
   ]},
   {path: '**', redirectTo: '/login', pathMatch: 'full'} 
 ];

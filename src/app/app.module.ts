@@ -7,24 +7,26 @@ import { AppRoutingModule } from './app-routing.module';
 /* Components*/
 import { AppComponent } from './app.component';
 import { ContentLayoutComponent } from './ContentLayout/ContentLayout.component';
-import { HeaderComponent } from './SharedModules/Header/Header.component';
+
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 /*Material Module */
 import { MaterialModule } from './MaterialModule/Material/Material.module';
+import { SharedModule } from './SharedModules/Shared.module';
+
 
 
 @NgModule({
   declarations: [	
     AppComponent,
-    HeaderComponent,
     ContentLayoutComponent
    ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     CoreModule,
+    SharedModule,
     BrowserAnimationsModule,
     MaterialModule,
     FormsModule,

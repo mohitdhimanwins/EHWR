@@ -1,0 +1,332 @@
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="loginWrapper">
+          <div class="row">
+            <div class="col-sm-12 col-md-6">
+              <h2>Customers</h2>
+              <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="customer">Customers</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">New Customer</li>
+                </ol>
+              </nav>
+            </div>
+            <div class="col-sm-12 col-md-6">
+              <div class="form-group actionBtn toggleAct text-right">
+                <a href="new-job" class="btn primary-btn comBtn mr-1">Save & Create Job</a>
+                <button type="button" class="btn primary-btn comBtn mr-1">Save</button>
+                <a href="new-job" class="btn primary-btn comBtn">Add Jobs</a>
+              </div>
+            </div>
+          </div>
+
+          <form class="mt-4">
+            <div class="row">
+
+              <div class="col-sm-12">
+                <ul class="nav nav-tabs">
+                  <li class="active"><a data-toggle="tab" class="active" href="#detailTab1">Details</a></li>
+                  <li><a data-toggle="tab" href="#contactTab1">Contact</a></li>
+                </ul>
+
+                <div class="tab-content mt-3">
+                  <div id="detailTab1" class="tab-pane fade in active show">
+                    <div class="row">
+                      <div class="col-sm-12 col-md-6">
+                        <div class="form-group">
+                          <label>Customer Name</label>
+                          <input class="form-control" type="text" placeholder="Customer Name">
+                        </div>
+                      </div>
+                      <div class="col-sm-12 col-md-3">
+                        <div class="form-group">
+                          <label>Preferred Invoice Method</label>
+                          <div class="csRadioBtn invoiceMethod d-flex">
+                            <label class="radioBtn">Mail
+                              <input type="radio" checked="checked" name="radio">
+                              <span class="checkmark"></span>
+                            </label>
+                            <label class="radioBtn">Email
+                              <input type="radio" name="radio">
+                              <span class="checkmark"></span>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-12 col-md-3">
+                        <div class="form-group">
+                          <label>Types</label>
+                          <div class="csRadioBtn invoiceMethod d-flex">
+                            <label class="radioBtn">Agent
+                              <input type="radio" checked="checked" name="Types">
+                              <span class="checkmark"></span>
+                            </label>
+                            <label class="radioBtn">Private
+                              <input type="radio" name="Types">
+                              <span class="checkmark"></span>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-12 mt-3">
+                        <div class="row">
+                          <div class="col-sm-12 col-md-6">
+                            <div class="form-group">
+                              <div class="d-flex align-items-center justify-content-between mb-2">
+                                <label class="mb-0">Email</label>
+                                <div class="csRadioBtn form-group mb-0">
+                                  <label class="radioBtn checkBox mb-0"><strong>Set as default email</strong>
+                                    <input type="checkbox" checked="checked" name="Types">
+                                    <span class="checkmark"></span>
+                                  </label>
+                                </div>
+                              </div>
+                              <input class="form-control" type="email" placeholder="Email">
+                            </div>
+                          </div>
+
+                          <div class="col-sm-12 col-md-6">
+                            <div class="form-group">
+                              <label>Account Balance </label>
+                              <input class="form-control" type="text" placeholder="Account Balance">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-12 col-md-6">
+                        <h5 class="subTitle">Street Address</h5>
+                        <div class="form-group">
+                          <label>Address 1</label>
+                          <input class="form-control" type="text" placeholder="Address 1">
+                        </div>
+                        <div class="form-group">
+                          <label>Address 2</label>
+                          <input class="form-control" type="text" placeholder="Address 2">
+                        </div>
+                        <div class="form-group">
+                          <label>Address 3</label>
+                          <input class="form-control" type="text" placeholder="Address 3">
+                        </div>
+                        <div class="form-group">
+                          <label>Suburb</label>
+                          <select class="form-control">
+                            <option>Select 1</option>
+                            <option>Select 2</option>
+                            <option>Select 3</option>
+                            <option>Select 4</option>
+                            <option>Select 5</option>
+                          </select>
+                        </div>
+                        <div class="row">
+                          <div class="col-sm-12 col-md-7">
+                            <div class="form-group">
+                              <label>State</label>
+                              <select class="form-control">
+                                <option>Select 1</option>
+                                <option>Select 2</option>
+                                <option>Select 3</option>
+                                <option>Select 4</option>
+                                <option>Select 5</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="col-sm-12 col-md-5">
+                            <div class="form-group">
+                              <label>Post Code</label>
+                              <input class="form-control" type="text" placeholder="Post Code">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-sm-12 col-md-6">
+                        <h5 class="subTitle">Postal Address <div class="alertCheck"><input type="checkbox" name="Types">
+                            <span class="">Same as Street</span></div>
+                        </h5>
+                        <div class="form-group">
+                          <label>Address 1</label>
+                          <input class="form-control" type="text" placeholder="Address 1">
+                        </div>
+                        <div class="form-group">
+                          <label>Address 2</label>
+                          <input class="form-control" type="text" placeholder="Address 2">
+                        </div>
+                        <div class="form-group">
+                          <label>Address 3</label>
+                          <input class="form-control" type="text" placeholder="Address 3">
+                        </div>
+                        <div class="form-group">
+                          <label>Suburb</label>
+                          <div class="form-group">
+                            <select class="form-control">
+                              <option>Select 1</option>
+                              <option>Select 2</option>
+                              <option>Select 3</option>
+                              <option>Select 4</option>
+                              <option>Select 5</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-sm-12 col-md-7">
+                            <div class="form-group">
+                              <label>State</label>
+                              <div class="form-group">
+                                <select class="form-control">
+                                  <option>Select 1</option>
+                                  <option>Select 2</option>
+                                  <option>Select 3</option>
+                                  <option>Select 4</option>
+                                  <option>Select 5</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-12 col-md-5">
+                            <div class="form-group">
+                              <label>Post Code</label>
+                              <input class="form-control" type="text" placeholder="Post Code">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-12 mt-2">
+                        <div class="form-group actionBtn toggleAct text-right">
+                          <a href="new-job" class="btn primary-btn comBtn">Save & Create Job</a>
+                          <button type="button" class="btn primary-btn comBtn">Save</button>
+                        </div>
+                      </div>
+                    </div>
+
+
+                  </div>
+                  <div id="contactTab1" class="tab-pane fade">
+                    <div class="row">
+                      <div class="col-sm-12">
+                        <div class="table-responsive">
+                          <table class="table tableBodyScroll">
+                            <thead>
+                              <tr>
+                                <th>First Name <i class="fa fa-sort shortingIcon" aria-hidden="true"></i></th>
+                                <th>Email <i class="fa fa-sort shortingIcon" aria-hidden="true"></i></th>
+                                <th>Phone Number <i class="fa fa-sort shortingIcon" aria-hidden="true"></i></th>
+                                <th class="actionCol">Action</th>
+                              </tr>
+                            </thead>
+                            <tbody class="boxscroll">
+                              <tr>
+                                <td><a href="#contactWrapper" class="scrollDown">William</a></td>
+                                <td>qwqer@gmail.com</td>
+                                <td>0022559944</td>
+                                <td class="actionCol">
+                                  <i class="fa fa-trash-o text-danger" title="Delete" aria-hidden="true"></i>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td><a href="#contactWrapper" class="scrollDown">Albania</a></td>
+                                <td>ouou@gmail.com</td>
+                                <td>0022559944</td>
+                                <td class="actionCol">
+                                  <i class="fa fa-trash-o text-danger" title="Delete" aria-hidden="true"></i>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td><a href="#contactWrapper" class="scrollDown">Barbados</a></td>
+                                <td>ytuu@gmail.com</td>
+                                <td>0022559944</td>
+                                <td class="actionCol">
+                                  <i class="fa fa-trash-o text-danger" title="Delete" aria-hidden="true"></i>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td><a href="#contactWrapper" class="scrollDown">Belarus</a></td>
+                                <td>asd@gmail.com</td>
+                                <td>0022559944</td>
+                                <td class="actionCol">
+                                  <i class="fa fa-trash-o text-danger" title="Delete" aria-hidden="true"></i>
+                                </td>
+                              </tr>
+
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+
+                      <div class="col-sm-12 mt-3">
+                        <div class="actionBtn text-right">
+                          <a href="#contactWrapper" class="btn primary-btn comBtn viewForm">Add New</a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row d-none">
+                      <div class="col-sm-12">
+                        <h5 class="subTitle">Contact</h5>
+                      </div>
+                      <div class="col-sm-12 col-md-6">
+                        <div class="form-group">
+                          <label>Salutation</label>
+                          <select class="form-control">
+                            <option>Mrs.</option>
+                            <option>Miss.</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-sm-12 col-md-6" id="contactWrapper">
+                        <div class="form-group">
+                          <label>First Name</label>
+                          <input class="form-control" type="text" placeholder="First Name">
+                        </div>
+                      </div>
+                      <div class="col-sm-12 col-md-6">
+                        <div class="form-group">
+                          <label>Last Name</label>
+                          <input class="form-control" type="text" placeholder="Last Name">
+                        </div>
+                      </div>
+                      <div class="col-sm-12 col-md-6">
+                        <div class="form-group">
+                          <div class="d-flex align-items-center justify-content-between mb-2">
+                            <label class="mb-0">Email</label>
+                            <div class="csRadioBtn form-group mb-0">
+                              <label class="radioBtn checkBox mb-0"><strong>Set as default email</strong>
+                                <input type="checkbox" checked="checked" name="Types">
+                                <span class="checkmark"></span>
+                              </label>
+                            </div>
+                          </div>
+                          <input class="form-control" type="email" placeholder="Email">
+                        </div>
+                      </div>
+
+                      <div class="col-sm-12 col-md-6">
+                        <div class="form-group">
+                          <label>Business</label>
+                          <input class="form-control" type="text" placeholder="Business">
+                        </div>
+                      </div>
+                      <div class="col-sm-12 col-md-6">
+                        <div class="form-group">
+                          <label>Mobile</label>
+                          <input class="form-control" type="text" placeholder="Mobile">
+                        </div>
+                      </div>
+
+                      <div class="col-sm-12">
+                        <div class="actionBtn text-right">
+                          <button type="button" class="btn primary-btn comBtn">Save</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
