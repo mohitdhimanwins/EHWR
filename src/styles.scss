@@ -1,0 +1,143 @@
+
+@import './assets/scss/common.scss';
+
+
+
+.loginWrapper {
+    background-color: rgba(255, 255, 255, 0.97);
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+	padding: 20px;
+	border-radius: 5px;
+	margin-bottom: 50px;
+	h2 {
+		font-size: 1.5rem;
+	}
+	.useFieldIcon {
+		position: relative;
+		input{
+			padding-right: 40px;
+		}
+		i {
+			cursor: pointer;
+			position: absolute;
+			right: 15px;
+			top: 50%;
+			transform: translateY(-50%);
+			-webkit-transform: translateY(-50%);
+			-moz-transform: translateY(-50%);
+			-ms-transform: translateY(-50%);
+		}
+	}
+	.csRadioBtn {
+		.radioBtn{
+			margin-right: 15px;
+			min-width: 120px;
+			margin-bottom: 15px;
+			
+		}
+		&.invoiceMethod{
+			.radioBtn {
+				min-width: 70px;
+			}
+		}
+		label {
+			font-weight: 400;
+		}
+	}
+	label {
+		font-weight: 500;
+	}
+	textarea{
+		min-height: 120px;
+		background-color: #fff;
+		resize: none;
+		font-size: 14px;
+		line-height: 20px;
+		&.maxHeight {
+			min-height: 150px;
+		}
+	}
+	.addTopSpace{
+		margin-top: 30px;
+		@media(max-width:767px){
+			margin-top: 5px;
+		}
+	}
+	.reportTable{
+		td {
+			border: none;
+			padding: 0;
+			vertical-align: middle;
+			border-bottom: 1px solid #ddd;
+		}
+	}
+}
+#viewDetails{
+	textarea {
+		min-height: 120px;
+		background-color: #fff;
+		resize: none;
+		font-size: 14px;
+		line-height: 20px;
+	}
+}
+// report page
+.selectOption {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 5px;
+} 
+
+.labelNo {
+	//background-color: #095239;
+    color: #095239;
+    padding: 4px 10px;
+    display: inline-flex;
+    align-items: center;
+	border-radius: 3px;
+	margin-left: 5px;
+	.jobId {
+		color: #095239;
+		font-size: 18px;
+		margin-left: 5px;
+	}
+}
+.jobId {
+    color: #095239;
+	font-size: 20px;
+	margin-left: 5px;
+}
+// tabbing
+.nav-tabs{
+	li{
+		margin-right: 5px;
+		
+		a {
+			background-color: #eee;
+			color: #095239;
+			padding: 8px 15px;
+			font-size: 16px;
+			display: inline-block;
+			text-decoration: none;
+			border-radius: 5px 5px 0 0;
+			min-width: 100px;
+    		text-align: center;
+			&.active{
+				background-color: #095239;
+				color: #fff;
+				display: inline-block;
+			}
+		}
+	}
+}
+#successMessage{
+	.modal-dialog {
+		.modal-body {
+			height: 150px;
+		}
+	}
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
