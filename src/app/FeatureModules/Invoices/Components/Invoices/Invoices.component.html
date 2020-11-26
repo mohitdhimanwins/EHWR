@@ -1,0 +1,223 @@
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="loginWrapper">
+          <div class="row">
+            <div class="col-sm-12 col-md-3">
+              <h2>Invoices</h2>
+            </div>
+            <div class="col-sm-12 col-md-9">
+              <div class="form-group d-flex align-items-center justify-content-end mb-0">
+                <span class="labelNo"><label class="mb-0">Invoices No.</label> <strong class="jobId">#1543</strong></span>
+                <span class="labelNo"><label class="mb-0">Job No.</label> <strong class="jobId">#1245</strong></span>
+                <a href="payments" class="btn primary-btn comBtn">Save & Payments</a> &nbsp;
+                <a href="new-job" class="btn primary-btn comBtn">Add Job</a>
+                
+              </div>
+            </div>
+            <div class="col-sm-12">
+              <div class="form-group d-flex align-items-center justify-content-end mb-0">										
+                <a href="#" class="btn primary-btn comBtn">Complete Job - No Payment Received</a>										
+              </div>
+            </div>
+          </div>
+          
+          <form class="mt-2">
+            <div class="row">
+              <div class="col-sm-12 col-md-7">
+                <div class="form-group">
+                  <label>Customers</label>
+                  <input class="form-control" type="text" placeholder="Barbados" readonly>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-5 mt-1">
+                <div class="form-group mt-4">
+                  <div class="actionBtn text-right">
+                    <button type="button" class="btn primary-btn comBtn" data-toggle="modal" data-target="#invoiceSection">Print All Unsent Invoices</button>												
+                  </div>
+                </div>	
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12 col-md-7">
+                <div class="form-group">
+                  <label>Job Address</label>
+                  <input class="form-control" type="text" placeholder="2 Man Job || 2nd man required to complete job" readonly>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-5 mt-1">
+                <div class="form-group mt-4">
+                  <div class="actionBtn text-right">
+                    <button type="button" class="btn primary-btn comBtn" data-toggle="modal" data-target="#addNote">Add Note For Invoice</button>
+                  </div>
+                </div>	
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12 col-md-7">										
+                <div class="form-group">
+                  <label>Date Due</label>
+                  <input class="form-control" type="text" placeholder="20-12-2020" readonly>
+                </div>
+                <div class="form-group">
+                  <label>Work Completed</label>
+                  <div class="table-responsive popupTable ">
+                    <table class="table tableBodyScroll">
+                      <thead>
+                        <tr>
+                          <th>Job No.</th>
+                          <th>Completed</th>
+                          <th>Page No.</th>
+                          <th>Amount</th>
+                          <th>Job Address</th>
+                        </tr>
+                      </thead>
+                      <tbody class="boxscroll heightLimit">
+                        <tr>
+                          <td><a href="#">#1245</a></td>
+                          <td>02-06-2020</td>
+                          <td>21</td>
+                          <td>$45</td>
+                          <td>Wert</td>
+                        </tr>																									
+                                  
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="col-sm-12 col-md-5">
+                <div class="table-responsive popupTable mb-0">
+                  <h4>Notes</h4>
+                  <table class="table tableBodyScroll">
+                    <thead>
+                      <tr>
+                        <th>Date</th>
+                        <th>Note</th>
+                        <th class="actionCol">Action</th>
+                      </tr>
+                    </thead>
+                    <tbody class="boxscroll">
+                      <tr>
+                        <td>12-02-2016</td>
+                        <td>Need this job for...</td>
+                        <td class="actionCol">															
+                          <i class="fa fa-trash-o text-danger"  title="Delete" aria-hidden="true"></i>														
+                        </td>
+                      </tr>	
+                      <tr>
+                        <td>16-06-2016</td>
+                        <td>Best way to get jobs...</td>
+                        <td class="actionCol">															
+                          <i class="fa fa-trash-o text-danger"  title="Delete" aria-hidden="true"></i>														
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>20-10-2016</td>
+                        <td>I’ve always been...</td>
+                        <td class="actionCol">															
+                          <i class="fa fa-trash-o text-danger"  title="Delete" aria-hidden="true"></i>														
+                        </td>
+                      </tr>		
+                    </tbody>
+                  </table>
+                </div>
+                                  
+              </div>
+
+              <!--div class="col-sm-12">
+                <h5>Job Not Invoiced</h5>
+                <div class="table-responsive">
+                  <table class="table tableBodyScroll">
+                    <thead>
+                      <tr>
+                        <th>Job No.</th>
+                        <th>Completed</th>
+                        <th>Page No.</th>
+                        <th>Amount</th>
+                        <th>Job Address</th>
+                      </tr>
+                    </thead>
+                    <tbody class="boxscroll heightLimit">
+                      <tr>
+                        <td><a href="#">#1245</a></td>
+                        <td>02-06-2020</td>
+                        <td>21</td>
+                        <td>$45</td>
+                        <td>Wert</td>
+                      </tr>																									
+                                
+                    </tbody>
+                  </table>
+                </div>
+              </div-->
+              <div class="col-sm-12 col-md-6">
+                <div class="form-group d-flex align-items-center mb-0">
+                  <label class="mb-0">Invoices Amount</label> <strong class="jobId">$0.00</strong>
+                </div>
+              </div>
+            </div>
+              <div class="row mt-2">
+                <div class="col-sm-12 col-md-6">
+                  <div class="form-group mb-0">
+                    <div class="actionBtn mt-2">
+                      <button type="button" class="btn primary-btn comBtn" >Save Invoices</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                  <div class="csRadioBtn form-group mb-0 mt-4 text-right">
+                    <label class="radioBtn checkBox mb-0 inline-block"><strong>Tick if invoice not required</strong>
+                      <input type="checkbox" name="Types">
+                      <span class="checkmark"></span>
+                    </label>
+                  </div>
+                </div>										
+              </div>
+
+              <div class="row">
+                <div class="col-sm-12 mt-2">
+                  <h5>Job Invoices</h5>
+                  <div class="table-responsive">
+                    <table class="table tableBodyScroll">
+                      <thead>
+                        <tr>
+                          <th>Invoice No. <i class="fa fa-sort shortingIcon" aria-hidden="true"></i></th>
+                          <th>Date Send <i class="fa fa-sort shortingIcon" aria-hidden="true"></i></th>
+                          <th>Date Due <i class="fa fa-sort shortingIcon" aria-hidden="true"></i></th>
+                          <th>Amount Due <i class="fa fa-sort shortingIcon" aria-hidden="true"></i></th>
+                          <th>Amount Paid <i class="fa fa-sort shortingIcon" aria-hidden="true"></i></th>
+                          <th>Status <i class="fa fa-sort shortingIcon" aria-hidden="true"></i></th>
+                          <th class="actionCol">Action</th>
+                        </tr>
+                      </thead>
+                      <tbody class="boxscroll heightLimit">
+                        <tr>
+                          <td><a href="#">#1543</a></td>
+                          <td>15-29-2020</td>
+                          <td>25-10-2020</td>
+                          <td>$56</td>
+                          <td>$48</td>
+                          <td>Outstanding</td>
+                          <td class="actionCol">
+                            <i class="fa fa-print greenColor" aria-hidden="true" title="Print"></i>
+                            <i class="fa fa-trash-o text-danger" title="Delete" aria-hidden="true"></i>
+                          </td>
+                        </tr>																										
+                                
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+
+              </div>
+
+
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

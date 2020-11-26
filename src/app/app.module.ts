@@ -14,7 +14,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 /*Material Module */
 import { MaterialModule } from './MaterialModule/Material/Material.module';
 import { SharedModule } from './SharedModules/Shared.module';
-
+import { NgxSpinnerModule } from 'ngx-spinner';
 
 
 @NgModule({
@@ -30,7 +30,8 @@ import { SharedModule } from './SharedModules/Shared.module';
     BrowserAnimationsModule,
     MaterialModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    NgxSpinnerModule
   ],
   providers: [],
   bootstrap: [AppComponent]

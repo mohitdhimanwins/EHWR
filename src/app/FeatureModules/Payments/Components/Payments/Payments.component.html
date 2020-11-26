@@ -1,0 +1,236 @@
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="loginWrapper">
+          <div class="row">
+            <div class="col-sm-12 col-md-3">
+              <h2>Payments</h2>
+            </div>
+            <div class="col-sm-12 col-md-9 text-right">
+              <a href="payments" class="btn primary-btn comBtn">New Payment</a>	
+              <button type="button" class="btn primary-btn comBtn" data-toggle="modal" data-target="#successMessage">Save</button>
+              <a href="new-job" class="btn primary-btn comBtn mb-2">Add Job</a>
+              <ul class="customerDetails">
+                <li><strong>Entered By:</strong><span>EHW</span></li>
+                <li><strong>Date:</strong><span>27 jan, 2008 11:00</span></li>
+                <li><strong>Last Updated By:</strong><span>EHW</span></li>
+                <li><strong>Date:</strong><span>27 jan, 2008 11:00</span></li>
+              </ul>
+            </div>
+          </div>
+
+          <form class="mt-4">
+            <div class="row">
+              <div class="col-sm-12 col-md-6">
+                <div class="form-group">
+                  <label>Search by Invoice No, Customers Name</label>
+                  <div class="form-group typeableWrapper">
+                    <select class="form-control typeableNumber" placeholder="Customer Name">
+                      <option></option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-6">
+                <div class="form-group">
+                  <label>Date</label>
+                  <input class="form-control" type="date">
+                </div>	
+              </div>
+              <div class="col-sm-12 col-md-6">										
+                <div class="form-group">
+                  <label>Amount</label>
+                  <input class="form-control" type="text" placeholder="Amount">
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-6">										
+                <div class="form-group">
+                  <label>Method</label>
+                  <select class="form-control">
+                    <option>Credit</option>
+                    <option>Debit</option>
+                    <option>Cash</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="row mt-4">
+              <div class="col-sm-12 mt-2">
+                <h5>Invoices Outstanding</h5>
+                <div class="table-responsive">
+                  <table class="table tableBodyScroll">
+                    <thead>
+                      <tr>
+                        <th>Invoice No. <i class="fa fa-sort shortingIcon" aria-hidden="true"></i></th>
+                        <th>Date Due <i class="fa fa-sort shortingIcon" aria-hidden="true"></i></th>
+                        <th>Page No. <i class="fa fa-sort shortingIcon" aria-hidden="true"></i></th>
+                        <th>Job Address <i class="fa fa-sort shortingIcon" aria-hidden="true"></i></th>
+                        <th>Amount Due <i class="fa fa-sort shortingIcon" aria-hidden="true"></i></th>
+                        <th>Payment <i class="fa fa-sort shortingIcon" aria-hidden="true"></i></th>
+                        <th>Notes <i class="fa fa-sort shortingIcon" aria-hidden="true"></i></th>
+                      </tr>
+                    </thead>
+                    <tbody class="boxscroll heightLimit">
+                      <tr>
+                        <td><a href="#">#13</a></td>
+                        <td>02-02-2020</td>
+                        <td>23</td>
+                        <td>Albania</td>
+                        <td>$56</td>
+                        <td>
+                          <div class="csRadioBtn form-group">
+                            <label class="radioBtn checkBox mb-0 mt-0">$45
+                              <input type="checkbox" checked="checked" name="Types">
+                              <span class="checkmark"></span>
+                            </label>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="csRadioBtn form-group">
+                            <label class="radioBtn checkBox mb-0 mt-0">
+                              <input type="checkbox" checked="checked" name="Types">
+                              <span class="checkmark"></span>
+                            </label>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><a href="#">#15</a></td>
+                        <td>03-04-2020</td>
+                        <td>21</td>
+                        <td>Barbados</td>
+                        <td>$22</td>
+                        <td>
+                          <div class="csRadioBtn form-group">
+                            <label class="radioBtn checkBox mb-0 mt-0">$46
+                              <input type="checkbox" checked="checked" name="Types">
+                              <span class="checkmark"></span>
+                            </label>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="csRadioBtn form-group">
+                            <label class="radioBtn checkBox mb-0 mt-0">
+                              <input type="checkbox" checked="checked" name="Types">
+                              <span class="checkmark"></span>
+                            </label>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><a href="#">#16</a></td>
+                        <td>13-04-2020</td>
+                        <td>26</td>
+                        <td>Belarus</td>
+                        <td>$21</td>
+                        <td>
+                          <div class="csRadioBtn form-group">
+                            <label class="radioBtn checkBox mb-0 mt-0">$98
+                              <input type="checkbox" checked="checked" name="Types">
+                              <span class="checkmark"></span>
+                            </label>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="csRadioBtn form-group">
+                            <label class="radioBtn checkBox mb-0 mt-0">
+                              <input type="checkbox" checked="checked" name="Types">
+                              <span class="checkmark"></span>
+                            </label>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><a href="#">#17</a></td>
+                        <td>20-06-2020</td>
+                        <td>02</td>
+                        <td>Cameroon</td>
+                        <td>$23</td>
+                        <td>
+                          <div class="csRadioBtn form-group">
+                            <label class="radioBtn checkBox mb-0 mt-0">$78
+                              <input type="checkbox" checked="checked" name="Types">
+                              <span class="checkmark"></span>
+                            </label>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="csRadioBtn form-group">
+                            <label class="radioBtn checkBox mb-0 mt-0">
+                              <input type="checkbox" checked="checked" name="Types">
+                              <span class="checkmark"></span>
+                            </label>
+                          </div>
+                        </td>
+                      </tr>	
+                      <tr>
+                        <td colspan="3"></td>
+                        <td><strong>Total</strong></td>
+                        <td>$560</td>
+                        <td>$750</td>
+                        <td></td>
+                      </tr>											
+                              
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="row mt-4">
+              <div class="col-sm-12 col-md-8 mt-2">
+                <h5>Paid Payments</h5>
+                <div class="table-responsive popupTable">
+                  <table class="table tableBodyScroll">
+                    <thead>
+                      <tr>
+                        <th>Date Paid <i class="fa fa-sort shortingIcon" aria-hidden="true"></i></th>
+                        <th>Amount <i class="fa fa-sort shortingIcon" aria-hidden="true"></i></th>
+                        <th class="actionCol">Action</th>
+                      </tr>
+                    </thead>
+                    <tbody class="boxscroll heightLimit">
+                      <tr>
+                        <td>02-01-2020</td>
+                        <td>$28</td>
+                        <td class="actionCol">
+                          <i class="fa fa-trash-o text-danger" title="Delete" aria-hidden="true"></i>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>15-02-2020</td>
+                        <td>$48</td>
+                        <td class="actionCol">
+                          <i class="fa fa-trash-o text-danger" title="Delete" aria-hidden="true"></i>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>16-06-2020</td>
+                        <td>$95</td>
+                        <td class="actionCol">
+                          <i class="fa fa-trash-o text-danger" title="Delete" aria-hidden="true"></i>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>20-10-2020</td>
+                        <td>$56</td>
+                        <td class="actionCol">
+                          <i class="fa fa-trash-o text-danger" title="Delete" aria-hidden="true"></i>
+                        </td>
+                      </tr>											
+                              
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+
+            
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

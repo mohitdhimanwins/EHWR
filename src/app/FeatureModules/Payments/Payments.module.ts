@@ -3,22 +3,19 @@ import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
+import { PaymentsRouting } from './Payments-routing.module';
 
 /*Components*/
-import { AddItemsComponent } from './Components/Items/AddItems/AddItems.component';
-import { ItemsComponent } from './Components/Items/Items.component';
-import { ItemsListComponent } from './Components/Items/ItemsList/ItemsList.component';
-import { ItemsRouting } from './Items-routing.module';
+import { PaymentsComponent } from './Components/Payments/Payments.component';
+
 
 
 @NgModule({
     declarations:[
-        ItemsComponent,
-        ItemsListComponent,
-        AddItemsComponent
+       PaymentsComponent
     ],
     imports:[
-        ItemsRouting,
+        PaymentsRouting,
         CommonModule,
         RouterModule, 
         FormsModule,
@@ -27,6 +24,6 @@ import { ItemsRouting } from './Items-routing.module';
     providers:[],
     bootstrap:[]
 })
-export class ItemsModule{
+export class PaymentsModule{
 
 }

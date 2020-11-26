@@ -16,6 +16,10 @@ const routes: Routes = [
   { path: 'customer', loadChildren: () => import('./FeatureModules/Customer/Customer.Module').then(m => m.CustomerModule) },
   { path: 'jobs',loadChildren:()=> import('./FeatureModules/Jobs/Jobs.module').then(m =>m.JobsModule)},
   { path: 'items',loadChildren:()=> import('./FeatureModules/Items/Items.module').then(m =>m.ItemsModule)},
+  { path: 'invoices',loadChildren:()=> import('./FeatureModules/Invoices/Invoices.module').then(m =>m.InvoicesModule)},
+  { path: 'payments',loadChildren:()=> import('./FeatureModules/Payments/Payments.module').then(m =>m.PaymentsModule)},
+  { path: 'reports',loadChildren:()=> import('./FeatureModules/Reports/Reports.module').then(m =>m.ReportsModule)},
+  { path: 'main',loadChildren:()=> import('./FeatureModules/Maintenance/Maintenance.module').then(m =>m.MaintenanceModule)},
   ]},
   {path: '**', redirectTo: '/login', pathMatch: 'full'} 
 ];

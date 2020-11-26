@@ -11,7 +11,7 @@ import { JobsListComponent } from './Components/Jobs/JobsList/JobsList.component
 const routes: Routes = [
    { path:'', component:JobsComponent,children:[
      { path:'', component:JobsListComponent},
-     { path:'addjob', component:AddJobsComponent},
+     { path:'AddJobs', component:AddJobsComponent},
    ]},
   
   ];

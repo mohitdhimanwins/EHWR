@@ -3,22 +3,21 @@ import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
+import { ReportsRouting } from './Reports-routing.module';
+
 
 /*Components*/
-import { AddItemsComponent } from './Components/Items/AddItems/AddItems.component';
-import { ItemsComponent } from './Components/Items/Items.component';
-import { ItemsListComponent } from './Components/Items/ItemsList/ItemsList.component';
-import { ItemsRouting } from './Items-routing.module';
+import { ReportsComponent } from './Components/Reports/Reports.component';
+
+
 
 
 @NgModule({
     declarations:[
-        ItemsComponent,
-        ItemsListComponent,
-        AddItemsComponent
+       ReportsComponent
     ],
     imports:[
-        ItemsRouting,
+        ReportsRouting,
         CommonModule,
         RouterModule, 
         FormsModule,
@@ -27,6 +26,6 @@ import { ItemsRouting } from './Items-routing.module';
     providers:[],
     bootstrap:[]
 })
-export class ItemsModule{
+export class ReportsModule{
 
 }

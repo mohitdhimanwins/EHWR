@@ -3,22 +3,17 @@ import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
+import { MaintenanceRouting } from './Maintenance-routing.module';
 
 /*Components*/
-import { AddItemsComponent } from './Components/Items/AddItems/AddItems.component';
-import { ItemsComponent } from './Components/Items/Items.component';
-import { ItemsListComponent } from './Components/Items/ItemsList/ItemsList.component';
-import { ItemsRouting } from './Items-routing.module';
-
+import { MaintenanceComponent } from './Components/Maintenance/Maintenance.component';
 
 @NgModule({
     declarations:[
-        ItemsComponent,
-        ItemsListComponent,
-        AddItemsComponent
+       MaintenanceComponent
     ],
     imports:[
-        ItemsRouting,
+        MaintenanceRouting,
         CommonModule,
         RouterModule, 
         FormsModule,
@@ -27,6 +22,6 @@ import { ItemsRouting } from './Items-routing.module';
     providers:[],
     bootstrap:[]
 })
-export class ItemsModule{
+export class MaintenanceModule{
 
 }
