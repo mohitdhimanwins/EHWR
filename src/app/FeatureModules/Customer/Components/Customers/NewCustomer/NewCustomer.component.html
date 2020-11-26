@@ -15,25 +15,21 @@
             </div>
             <div class="col-sm-12 col-md-6">
               <div class="form-group actionBtn toggleAct text-right">
-                <a href="new-job" class="btn primary-btn comBtn mr-1">Save & Create Job</a>
+                <a routerLink ="../../jobs/addjob" class="btn primary-btn comBtn mr-1">Save & Create Job</a>
                 <button type="button" class="btn primary-btn comBtn mr-1">Save</button>
-                <a href="new-job" class="btn primary-btn comBtn">Add Jobs</a>
+                <a routerLink ="../../jobs/addjob" class="btn primary-btn comBtn">Add Jobs</a>
               </div>
             </div>
           </div>
 
           <form class="mt-4">
             <div class="row">
-
               <div class="col-sm-12">
-                <ul class="nav nav-tabs">
-                  <li class="active"><a data-toggle="tab" class="active" href="#detailTab1">Details</a></li>
-                  <li><a data-toggle="tab" href="#contactTab1">Contact</a></li>
-                </ul>
-
-                <div class="tab-content mt-3">
-                  <div id="detailTab1" class="tab-pane fade in active show">
-                    <div class="row">
+                <mat-tab-group>
+                  <mat-tab label="Details">
+                    <br><br>
+                    <app-Details></app-Details>
+                     <!-- <div class="row">
                       <div class="col-sm-12 col-md-6">
                         <div class="form-group">
                           <label>Customer Name</label>
@@ -194,16 +190,17 @@
                       </div>
                       <div class="col-sm-12 mt-2">
                         <div class="form-group actionBtn toggleAct text-right">
-                          <a href="new-job" class="btn primary-btn comBtn">Save & Create Job</a>
+                          <a href="new-job" class="btn primary-btn comBtn">Save & Create Job</a> &nbsp;
                           <button type="button" class="btn primary-btn comBtn">Save</button>
                         </div>
                       </div>
-                    </div>
-
-
-                  </div>
-                  <div id="contactTab1" class="tab-pane fade">
-                    <div class="row">
+                    </div> -->
+                  </mat-tab>
+                  <mat-tab label="Second"> 
+                    <!-- Content 2 -->
+                    <br><br>
+                    <app-Contact></app-Contact>
+                    <!-- <div class="row">
                       <div class="col-sm-12">
                         <div class="table-responsive">
                           <table class="table tableBodyScroll">
@@ -248,20 +245,18 @@
                                   <i class="fa fa-trash-o text-danger" title="Delete" aria-hidden="true"></i>
                                 </td>
                               </tr>
-
                             </tbody>
                           </table>
                         </div>
                       </div>
-
                       <div class="col-sm-12 mt-3">
                         <div class="actionBtn text-right">
                           <a href="#contactWrapper" class="btn primary-btn comBtn viewForm">Add New</a>
                         </div>
                       </div>
-                    </div>
-
-                    <div class="row d-none">
+                    </div> -->
+                       <!-- add contact  -->
+                    <!-- <div class="row d-none">
                       <div class="col-sm-12">
                         <h5 class="subTitle">Contact</h5>
                       </div>
@@ -319,9 +314,9 @@
                           <button type="button" class="btn primary-btn comBtn">Save</button>
                         </div>
                       </div>
-                    </div>
-                  </div>
-                </div>
+                    </div> -->
+                   </mat-tab>
+                </mat-tab-group>
               </div>
             </div>
           </form>

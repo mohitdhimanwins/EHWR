@@ -1,0 +1,173 @@
+<form [formGroup] ="detailsForm" (ngSubmit) ="onSubmit()">
+  <div class="row">
+    <div class="col-sm-12 col-md-6">
+      <div class="form-group">
+        <label>Customer Name</label>
+        <input class="form-control" type="text" placeholder="Customer Name" 
+        formControlName ="customerName">
+      </div>
+    </div>
+    <div class="col-sm-12 col-md-3">
+      <div class="form-group">
+        <label>Preferred Invoice Method</label>
+        <div class="csRadioBtn invoiceMethod d-flex">
+          <label class="radioBtn">Mail
+            <input type="radio" checked="checked" name="radio">
+            <span class="checkmark"></span>
+          </label>
+          <label class="radioBtn">Email
+            <input type="radio" name="radio">
+            <span class="checkmark"></span>
+          </label>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-12 col-md-3">
+      <div class="form-group">
+        <label>Types</label>
+        <div class="csRadioBtn invoiceMethod d-flex">
+          <label class="radioBtn">Agent
+            <input type="radio" checked="checked" name="Types">
+            <span class="checkmark"></span>
+          </label>
+          <label class="radioBtn">Private
+            <input type="radio" name="Types">
+            <span class="checkmark"></span>
+          </label>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-12 mt-3">
+      <div class="row">
+        <div class="col-sm-12 col-md-6">
+          <div class="form-group">
+            <div class="d-flex align-items-center justify-content-between mb-2">
+              <label class="mb-0">Email</label>
+              <div class="csRadioBtn form-group mb-0">
+                <label class="radioBtn checkBox mb-0"><strong>Set as default email</strong>
+                  <input type="checkbox" checked="checked" name="Types">
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+            </div>
+            <input class="form-control" type="email" placeholder="Email">
+          </div>
+        </div>
+  
+        <div class="col-sm-12 col-md-6">
+          <div class="form-group">
+            <label>Account Balance </label>
+            <input class="form-control" type="text" placeholder="Account Balance"
+            formControlName ="accountBal">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-12 col-md-6" formGroupName="address">
+      <h5 class="subTitle">Street Address</h5>
+      <div class="form-group">
+        <label>Address 1</label>
+        <input class="form-control" type="text" 
+        formControlName="address1"
+        placeholder="Address 1">
+      </div>
+      <div class="form-group">
+        <label>Address 2</label>
+        <input class="form-control" type="text" 
+          formControlName="address2"
+           placeholder="Address 2">
+      </div>
+      <div class="form-group">
+        <label>Address 3</label>
+        <input class="form-control" type="text" 
+        formControlName="address3"
+        placeholder="Address 3">
+      </div>
+      <div class="form-group">
+        <label>Suburb</label>
+        <select class ="form-control" formControlName ="suburb">
+          <option value=""></option>
+          <option *ngFor="let suburb of suburb" [ngValue]="suburb"></option>
+        </select>
+      </div>
+      <div class="row">
+        <div class="col-sm-12 col-md-7">
+          <div class="form-group">
+            <label>State</label>
+            <select class ="form-control" formControlName ="state">
+              <!-- <option value=""></option> -->
+              <option *ngFor="let state of state" [ngValue]="state"></option>
+            </select>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-5">
+          <div class="form-group">
+            <label>Post Code</label>
+            <input class="form-control" type="text" 
+               formControlName="postCode"
+               placeholder="Post Code">
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="col-sm-12 col-md-6">
+      <h5 class="subTitle">Postal Address <div class="alertCheck"><input type="checkbox" name="Types">
+          <span class="">Same as Street</span></div>
+      </h5>
+      <div class="form-group">
+        <label>Address 1</label>
+        <input class="form-control" type="text" placeholder="Address 1">
+      </div>
+      <div class="form-group">
+        <label>Address 2</label>
+        <input class="form-control" type="text" placeholder="Address 2">
+      </div>
+      <div class="form-group">
+        <label>Address 3</label>
+        <input class="form-control" type="text" placeholder="Address 3">
+      </div>
+      <div class="form-group">
+        <label>Suburb</label>
+        <div class="form-group">
+          <select class="form-control">
+            <option>Select 1</option>
+            <option>Select 2</option>
+            <option>Select 3</option>
+            <option>Select 4</option>
+            <option>Select 5</option>
+          </select>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12 col-md-7">
+          <div class="form-group">
+            <label>State</label>
+            <div class="form-group">
+              <select class="form-control">
+                <option>Select 1</option>
+                <option>Select 2</option>
+                <option>Select 3</option>
+                <option>Select 4</option>
+                <option>Select 5</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-5">
+          <div class="form-group">
+            <label>Post Code</label>
+            <input class="form-control" type="text" placeholder="Post Code">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-12 mt-2">
+      <div class="form-group actionBtn toggleAct text-right">
+        <a href="new-job" class="btn primary-btn comBtn">Save & Create Job</a> &nbsp;
+        <button type="submit" class="btn primary-btn comBtn">Save</button>
+      </div>
+    </div>
+  </div>
+</form>
+
